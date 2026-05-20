@@ -16,6 +16,7 @@ MainLogo.Position = UDim2.new(0, 12, 0, 12)
 MainLogo.BackgroundTransparency = 1
 MainLogo.Image = "rbxassetid://117591232973645"
 MainLogo.Parent = game:GetService("CoreGui"):FindFirstChild("Orion") or Window.Tabs
+
 Settings = Settings or {}
 
 local Players = game:GetService("Players")
