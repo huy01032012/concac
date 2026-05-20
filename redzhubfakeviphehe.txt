@@ -1,3 +1,21 @@
+local Library = loadstring(game:HttpGet("https://githubusercontent.com"))()
+
+local Window = Library:MakeWindow({
+    Name = "Quoc Huy Hub",
+    HidePremium = false,
+    SaveConfig = true,
+    ConfigFolder = "QuocHuyHub_Config",
+    IntroText = "Welcome to Quoc Huy Hub",
+    IntroIcon = "rbxassetid://117591232973645"
+})
+
+local MainLogo = Instance.new("ImageLabel")
+MainLogo.Name = "QuocHuyAvatarLogo"
+MainLogo.Size = UDim2.new(0, 75, 0, 75)
+MainLogo.Position = UDim2.new(0, 12, 0, 12)
+MainLogo.BackgroundTransparency = 1
+MainLogo.Image = "rbxassetid://117591232973645"
+MainLogo.Parent = game:GetService("CoreGui"):FindFirstChild("Orion") or Window.Tabs
 Settings = Settings or {}
 
 local Players = game:GetService("Players")
